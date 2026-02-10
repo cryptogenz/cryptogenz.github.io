@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Cryptogenz</title>
+    <title>Portfolio | Pratyush</title>
     <style>
         :root {
             --primary: #00ff88;
@@ -131,6 +131,11 @@
             margin-bottom: 50px;
         }
 
+        .btn-container {
+            display: flex;
+            gap: 20px;
+        }
+
         .btn {
             border: 1px solid var(--primary);
             color: var(--primary);
@@ -144,6 +149,16 @@
 
         .btn:hover {
             background-color: rgba(0, 255, 136, 0.1);
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--text);
+            color: var(--text-light);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
         }
 
         /* About Section */
@@ -234,8 +249,9 @@
             .hero-title { font-size: 2.5rem; }
             .hero-subtitle { font-size: 2rem; }
             nav { padding: 20px; }
-            .nav-links { display: none; } /* Simplified for mobile demo */
+            .nav-links { display: none; } 
             .about-content { grid-template-columns: 1fr; }
+            .btn-container { flex-direction: column; }
         }
     </style>
 </head>
@@ -259,7 +275,10 @@
             I'm a First-Year B.Tech student based in Dehradun/NCR, specializing in C, Python, and Web Development. 
             Currently exploring the intersection of software and hardware while mastering the Arch Linux environment.
         </p>
-        <a href="https://github.com/cryptogenz" target="_blank" class="btn">Check out my GitHub</a>
+        <div class="btn-container">
+            <a href="https://github.com/cryptogenz" target="_blank" class="btn">Check out my GitHub</a>
+            <a href="https://www.linkedin.com/in/pratyush-yadav-423b99241/" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+        </div>
     </section>
 
     <section id="about">
@@ -336,7 +355,10 @@
             I am currently looking for opportunities to collaborate on open-source projects or internships. 
             Whether you have a question about my Arch setup or just want to say hi, my inbox is open!
         </p>
-        <a href="mailto: thepratyushyadav@gmail.com" class="btn">Say Hello</a>
+        <div class="btn-container" style="justify-content: center;">
+            <a href="mailto:your-email@example.com" class="btn">Say Hello</a>
+            <a href="https://www.linkedin.com/in/pratyush-yadav-423b99241/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
     </section>
 
     <footer>
@@ -367,7 +389,7 @@
             observer.observe(section);
         });
 
-        console.log("Welcome to Pratyush Portfolio. Running on Arch?");
+        console.log("Welcome to Pratyush's Portfolio.");
     </script>
 </body>
 </html>
