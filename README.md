@@ -1,1 +1,1 @@
-# cryptogenz.github.io
+# pratyush.github.io
